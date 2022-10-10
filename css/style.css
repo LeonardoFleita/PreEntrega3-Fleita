@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding-top: 28rem;
+  background: url("../img/header.jpg") #000000;
+  background-position: top center;
+  grid-area: header;
+}
+header nav {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 650;
+  font-size: 2rem;
+  background-color: rgb(34, 34, 34);
+}
+header nav ul {
+  border: 0.05rem white solid;
+  border-left: 0;
+  border-right: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0em;
+  margin: 0;
+}
+header nav ul li {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+header nav ul li a {
+  color: #cbdd74;
+  transition: color 0.5s;
+}
+header nav ul li a:hover {
+  color: #469100;
+}
+header nav ul .vivo {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+header nav ul .vivo a img {
+  transition: all 0.5s;
+}
+header nav ul .vivo a img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  header nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3rem 0.5rem 0rem;
+  }
+  header nav ul li {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+  header nav ul .vivo {
+    padding: 0rem 0rem 0rem 1rem;
+  }
+}
+@media (min-width: 500px) {
+  .grilla-index {
+    display: grid;
+    grid-template-areas: "header" "mainIndex" "footer";
+  }
+  .grilla-index main {
+    background: url("../img/index/fondoIndex.jpg") #B5B5B5;
+    background-position: top center;
+    background-size: cover;
+    grid-area: mainIndex;
+    padding: 7rem 5rem 0rem 5rem;
+  }
+  .grilla-index main .mainIndex__grilla {
+    display: grid;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    grid-template-areas: "sinopsis" "serpiente" "demo" "fotoCalaveras";
+    justify-content: center;
+    justify-items: center;
+  }
+  .grilla-index main .mainIndex__grilla .sinopsis {
+    grid-area: sinopsis;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .grilla-index main .mainIndex__grilla .sinopsis div img {
+    width: 24rem;
+  }
+  .grilla-index main .mainIndex__grilla .sinopsis p {
+    font-family: "Asap", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3d3d3d;
+    padding-top: 2rem;
+    text-align: justify;
+  }
+  .grilla-index main .mainIndex__grilla .serpiente {
+    padding: 5rem 2.5rem 0rem 0rem;
+    grid-area: serpiente;
+    align-self: center;
+    justify-self: center;
+  }
+  .grilla-index main .mainIndex__grilla .serpiente img {
+    height: 20rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo {
+    padding-top: 8rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo div img {
+    width: 14rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo div iframe {
+    padding-top: 1rem;
+    width: 40rem;
+    height: 25rem;
+  }
+  .grilla-index main .mainIndex__grilla .fotoPose {
+    padding-top: 8rem;
+    grid-area: fotoCalaveras;
+    justify-self: center;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .grilla-index main {
+    padding: 7rem 6rem 0rem 6rem;
+  }
+  .grilla-index main .mainIndex__grilla {
+    row-gap: 10rem;
+    grid-template-areas: "sinopsis sinopsis" "demo serpiente" "fotoCalaveras fotoCalaveras";
+  }
+  .grilla-index main .mainIndex__grilla .sinopsis {
+    width: 60rem;
+  }
+  .grilla-index main .mainIndex__grilla .serpiente {
+    padding: 0;
+    align-self: end;
+  }
+  .grilla-index main .mainIndex__grilla .serpiente img {
+    height: 23.5rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo {
+    padding: 0rem;
+    align-self: end;
+  }
+  .grilla-index main .mainIndex__grilla .fotoPose {
+    padding: 0rem;
+  }
+}
+@media (min-width: 1024px) {
+  .grilla-index main .mainIndex__grilla .sinopsis {
+    width: 85rem;
+  }
+}
+@media (min-width: 1300px) {
+  .grilla-index main .mainIndex__grilla {
+    grid-template-areas: "sinopsis serpiente" "fotoCalaveras demo";
+    align-items: center;
+  }
+  .grilla-index main .mainIndex__grilla .sinopsis {
+    width: 50rem;
+  }
+  .grilla-index main .mainIndex__grilla .sinopsis div img {
+    width: 30rem;
+  }
+  .grilla-index main .mainIndex__grilla .serpiente {
+    padding: 0rem 0rem 0rem 5rem;
+  }
+  .grilla-index main .mainIndex__grilla .serpiente img {
+    height: 30rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo {
+    padding-bottom: 2rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo div img {
+    width: 18rem;
+  }
+  .grilla-index main .mainIndex__grilla .demo div iframe {
+    padding-top: 4rem;
+    width: 50rem;
+    height: 30rem;
+  }
+}
+@media (min-width: 500px) {
+  .grilla-quienesSomos {
+    display: grid;
+    grid-template-areas: "header" "mainQuienesSomos" "footer";
+  }
+  .grilla-quienesSomos main {
+    background: url("../img/quienesSomos/fondoQuienesSomos.jpg") #bdc945;
+    background-size: cover;
+    background-position: top center;
+    grid-area: mainQuienesSomos;
+    padding: 7rem 3rem 5rem 3rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla {
+    display: grid;
+    grid-template-areas: "quienesSomos" "fotoCalavera" "integrantes";
+    justify-items: center;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
+    padding: 0rem 0rem 4rem 0rem;
+    grid-area: quienesSomos;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos div img {
+    height: 8rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos p {
+    color: #3d3d3d;
+    font-family: "Asap", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera {
+    padding: 3rem 0rem 4rem 0rem;
+    grid-area: fotoCalavera;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera img {
+    height: 25rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes {
+    padding: 6rem 0rem 4rem 0rem;
+    grid-area: integrantes;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-titulo img {
+    height: 8rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla {
+    display: grid;
+    grid-template-areas: "caraNati datosNati" "caraFlute datosFlute" "caraFranco datosFranco" "caraDami datosDami";
+    row-gap: 8rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .fotoCara img {
+    height: 13rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .caraNati {
+    grid-area: caraNati;
+    padding-top: 2rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .caraNati img {
+    height: 15.5rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .caraFlute {
+    grid-area: caraFlute;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .caraFranco {
+    grid-area: caraFranco;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .caraDami {
+    grid-area: caraDami;
+    padding-top: 1.5rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .caraDami img {
+    height: 14rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos {
+    width: 28rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos h1 {
+    font-family: "Asap", sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos a img {
+    height: 5em;
+    padding-bottom: 0.2rem;
+    transition: all 0.3s;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos a img:hover {
+    transform: scale(1.1);
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos p {
+    color: #3d3d3d;
+    font-family: "Asap", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datosNati {
+    grid-area: datosNati;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datosFlute {
+    grid-area: datosFlute;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datosFranco {
+    grid-area: datosFranco;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datosDami {
+    grid-area: datosDami;
+  }
+}
+@media (min-width: 768px) {
+  .grilla-quienesSomos main {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla {
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+    grid-template-areas: "quienesSomos fotoCalavera" "integrantes integrantes";
+    justify-items: start;
+    align-items: center;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
+    padding: 0;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos div img {
+    height: 6rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera {
+    padding: 0;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera img {
+    height: 20rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-titulo img {
+    height: 7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .grilla-quienesSomos main .mainQuienesSomos__grilla {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    justify-content: center;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
+    width: 60rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos div img {
+    height: 8rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-titulo img {
+    height: 8rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla {
+    grid-template-areas: "caraNati datosNati caraFlute datosFlute" "caraFranco datosFranco caraDami datosDami";
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .fotoCara img {
+    height: 11rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos {
+    width: 25rem;
+  }
+}
+@media (min-width: 1300px) {
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
+    width: 65rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .fotoCara img {
+    height: 16rem;
+  }
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos {
+    width: 30rem;
+  }
+}
+@media (min-width: 500px) {
+  footer {
+    background-color: rgb(34, 34, 34);
+    border: 1px white solid;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+  }
+  footer img {
+    height: 6rem;
+    padding: 2rem;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div h1 {
+    color: #cbdd74;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  footer div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer div div a img {
+    height: 4.3rem;
+    padding: 1rem;
+    transition: all 0.5s;
+  }
+  footer div div a img:hover {
+    transform: scale(1.2);
+  }
+}
+@media (min-width: 768px) {
+  footer img {
+    height: 7.5rem;
+  }
+  footer div h1 {
+    font-size: 2rem;
+  }
+  footer div div a img {
+    height: 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

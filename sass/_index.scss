@@ -1,0 +1,157 @@
+@media(min-width: 500px){
+    .grilla-index{
+        display: grid;
+        grid-template-areas: 
+                "header"
+                "mainIndex"
+                "footer";
+        main{
+            background: url('../img/index/fondoIndex.jpg') #B5B5B5;
+            background-position: top center;
+            background-size: cover;
+            grid-area: mainIndex;
+            padding: 7rem 5rem 0rem 5rem;
+            .mainIndex__grilla{
+                display: grid;
+                column-gap: 2rem;
+                grid-template-areas: "sinopsis"
+                "serpiente"
+                "demo"
+                "fotoCalaveras";
+                justify-content: center;
+                justify-items: center;
+                .sinopsis{
+                    grid-area: sinopsis;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    div{
+                        img{
+                            width: 24rem;
+                        }
+                    }
+                    p{
+                        font-family: 'Asap', sans-serif;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: $pColor;
+                        padding-top: 2rem;
+                        text-align: justify;
+                    }
+                }
+                .serpiente{
+                    padding: 5rem 2.5rem 0rem 0rem;
+                    grid-area: serpiente;
+                    align-self: center;
+                    justify-self: center;
+                    img{
+                        height: 20rem;
+                    }
+                }
+                .demo{
+                    padding-top: 8rem;
+                    div{
+                        img{
+                            width: 14rem;
+                        }
+                        iframe{
+                            padding-top: 1rem;
+                            width: 40rem; 
+                            height: 25rem;
+                        }
+                    }
+                }
+                .fotoPose{
+                    padding-top: 8rem;
+                    grid-area: fotoCalaveras;
+                    justify-self: center;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .grilla-index{
+        main{
+            padding: 7rem 6rem 0rem 6rem;
+            .mainIndex__grilla{
+                row-gap: 10rem;
+                grid-template-areas: "sinopsis sinopsis"
+                "demo serpiente"
+                "fotoCalaveras fotoCalaveras";
+                .sinopsis{
+                    width: 60rem;
+                }
+                .serpiente{
+                    padding: 0;
+                    align-self: end;
+                    img{
+                        height: 23.5rem;
+                    }
+                }
+                .demo{
+                    padding: 0rem;
+                    align-self: end;
+                }
+                .fotoPose{
+                    padding: 0rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .grilla-index{
+        main{
+            .mainIndex__grilla{
+                .sinopsis{
+                    width: 85rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1300px){
+    .grilla-index{
+        main{
+            .mainIndex__grilla{
+                grid-template-areas: "sinopsis serpiente"
+                "fotoCalaveras demo";
+                align-items: center;
+                .sinopsis{
+                    width: 50rem;
+                    div{
+                        img{
+                            width: 30rem;
+                        }
+                    }
+                }
+                .serpiente{
+                    padding: 0rem 0rem 0rem 5rem;
+                    img{
+                        height: 30rem;
+                    }
+                }
+                .demo{
+                    padding-bottom: 2rem;
+                    div{
+                        img{
+                            width: 18rem;
+                        }
+                        iframe{
+                            padding-top: 4rem;
+                            width: 50rem;
+                            height: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

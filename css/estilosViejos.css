@@ -1,0 +1,250 @@
+
+
+/* Estilos la mesa de al lado */
+
+@media(min-width: 600px){
+    .grilla-mesaDeAlLado{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "mainMesa"
+        "footer";
+    }
+
+    .mainMesa{
+        background: url('../img/laMesaDeAlLado/fondoLaMesaDeAlLado.jpg') #000000;
+        background-size: cover;
+        background-position: top center;
+        grid-area: mainMesa;
+        padding: 7rem 8rem 5rem 8rem;
+    }
+
+    .mainMesa__grilla{
+        display: grid;
+        grid-template-areas: 
+        "mesa"
+        "carrusel";
+        justify-items: center;
+    }
+
+    .mesa{
+        grid-area: mesa;
+    }
+
+    .mesa__titulo{
+        padding-bottom: 5rem;
+    }
+
+    .mesa__titulo-img{
+        height: 10rem;
+    }
+
+    .mesa__texto{
+        color: white;
+        font-family: 'Asap', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+
+    .carrusel{
+        padding-top: 5rem;
+        width: 40rem;
+        grid-area: carrusel;
+    }
+}
+
+@media(min-width: 768px){
+
+    .carrusel{
+        width: 60rem;
+    }
+}
+
+@media(min-width: 1024px){
+    
+    .mesa{
+        width: 85rem;
+    }
+    
+    .mesa__titulo-img{
+        height: 13rem;
+    }
+
+    .carrusel{
+        width: 85rem;
+    }
+}
+
+@media(min-width: 1300px){
+    
+    .mesa{
+        width: 100rem;
+    }
+
+    .carrusel{
+        width: 100rem;
+    }
+}
+
+/* Estilos main destacados (esta página no la toqué para esta entrega) */
+
+.mainDestacados{
+    background: url('../img/quienesSomos/fondoQuienesSomos.jpg') #bdc945;
+    background-size: 100%;
+    background-position: top center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destacados__texto{
+    color: #3d3d3d;
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.destacados__texto--titulo{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.destacados__texto--parrafo{
+    padding: 10px 0px 10px 0px;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 250px 50px 250px;
+}
+
+.videos__destacado{
+    padding: 10px 10px 10px 10px;
+    height: 200px;
+}
+
+/* Estilos main contacto (esta página no la toqué para esta entrega) */
+
+.mainContacto{
+    background: url('../img/contacto/fondoContacto.jpg') rgb(44, 44, 44);
+    background-position: top center;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contacto__texto{
+    padding: 0px 250px 50px 250px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+fieldset{
+    color: #cbdd74;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+    font-weight: 300;   
+}
+
+.contacto__texto--titulo{
+    color: #cbdd74;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+textarea{
+    margin-top: 15px;
+    width: 600px;
+    height: 250px;
+    resize: none;
+}
+
+form{
+    padding-right: 50px;
+}
+
+.formulario__imagen{
+    height: 450px;
+    padding-left: 50px;
+}
+
+.formulario__boton{
+    padding: 5px;
+    margin-top: 5px;
+    background-color: transparent;
+    border-color: #cbdd74;
+    color: #cbdd74;
+}
+
+/* Estilos footer */
+
+footer{
+    background-color: rgb(34, 34, 34);
+    border: 1px white solid;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+}
+
+.footer-redes__texto{
+    color: #cbdd74;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.footer__logoCalavera{
+    height: 7.5rem;
+    padding: 2rem;
+}
+
+.footer__logoBotellon{
+    height: 7.5rem;
+    padding: 2rem;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-redes__logo{
+    height: 5rem;
+    padding: 1rem;
+    transition: all 0.5s;
+}
+
+.footer-redes__logo:hover{
+    transform: scale(1.2);
+}
+

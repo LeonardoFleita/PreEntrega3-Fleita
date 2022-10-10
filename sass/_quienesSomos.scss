@@ -1,0 +1,234 @@
+@media(min-width: 500px){
+    .grilla-quienesSomos{
+        display: grid;
+        grid-template-areas: 
+                "header"
+                "mainQuienesSomos"
+                "footer";
+        main{
+            background: url('../img/quienesSomos/fondoQuienesSomos.jpg') #bdc945;
+            background-size: cover;
+            background-position: top center;
+            grid-area: mainQuienesSomos;
+            padding: 7rem 3rem 5rem 3rem;
+            .mainQuienesSomos__grilla{
+                display: grid;
+                grid-template-areas:
+                "quienesSomos"
+                "fotoCalavera"
+                "integrantes";
+                justify-items: center;
+                .quienesSomos{
+                    padding: 0rem 0rem 4rem 0rem;
+                    grid-area: quienesSomos;
+                    div{
+                        img{
+                            height: 8rem;
+                        }
+                    }
+                    p{
+                        color: $pColor;
+                        font-family: 'Asap', sans-serif;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        padding-top: 1rem;  
+                    }
+                }
+                .fotoCalavera{
+                    padding: 3rem 0rem 4rem 0rem;
+                    grid-area: fotoCalavera;
+                    img{
+                        height: 25rem;
+                    }
+                }
+                .integrantes{
+                    padding: 6rem 0rem 4rem 0rem;
+                    grid-area: integrantes;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    .integrantes-titulo{
+                        img{
+                            height: 8rem;
+                        }
+                    }
+                    .integrantes-grilla{
+                        display: grid;
+                        grid-template-areas: 
+                        "caraNati datosNati"
+                        "caraFlute datosFlute"
+                        "caraFranco datosFranco"
+                        "caraDami datosDami";
+                        row-gap: 8rem;
+                        column-gap: 2rem;
+                        justify-items: center;
+                        align-items: center;
+                        padding-top: 5rem;
+                        .fotoCara{
+                            img{
+                                height: 13rem; 
+                            }
+                        }
+                        .caraNati{
+                            grid-area: caraNati;
+                            padding-top: 2rem;
+                            img{
+                                height: 15.5rem;
+                            }
+                        }
+                        .caraFlute{
+                            grid-area: caraFlute;
+                        }
+                        .caraFranco{
+                            grid-area: caraFranco;
+                        }
+                        .caraDami{
+                            grid-area: caraDami;
+                            padding-top: 1.5rem;
+                            img{
+                                height: 14rem;
+                            }
+                        }
+                        .datos{
+                            width: 28rem;
+                            h1{
+                                font-family: 'Asap', sans-serif;
+                                color: white;
+                                font-size: 2rem;
+                                font-weight: 800;
+                            }
+                            a{
+                                img{
+                                    height: 5em;
+                                    padding-bottom: 0.2rem;
+                                    transition: all 0.3s;
+                                    &:hover{
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                            p{
+                                color: #3d3d3d;
+                                font-family: 'Asap', sans-serif;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                            }  
+                        }
+                        .datosNati{
+                            grid-area: datosNati;
+                            }
+                        .datosFlute{
+                            grid-area: datosFlute;
+                        }
+                        .datosFranco{
+                            grid-area: datosFranco;
+                        }
+                        .datosDami{
+                            grid-area: datosDami;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .grilla-quienesSomos{
+        main{
+            padding: 7rem 5rem 5rem 5rem;
+            .mainQuienesSomos__grilla{
+                column-gap: 2em;
+                grid-template-areas:
+                "quienesSomos fotoCalavera"
+                "integrantes integrantes";
+                justify-items: start;
+                align-items: center;
+                .quienesSomos{
+                    padding: 0;
+                    div{
+                        img{
+                            height: 6rem;
+                        }
+                    }
+                }
+                .fotoCalavera{
+                    padding: 0;
+                    img{
+                        height: 20rem;
+                    }
+                }
+                .integrantes{
+                    .integrantes-titulo{
+                        img{
+                            height: 7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .grilla-quienesSomos{
+        main{
+            .mainQuienesSomos__grilla{
+                column-gap: 1rem;
+                justify-content: center;
+                .quienesSomos{
+                    width: 60rem;
+                    div{
+                        img{
+                            height: 8rem;
+                        }
+                    }
+                }
+                .integrantes{
+                    .integrantes-titulo{
+                        img{
+                            height: 8rem;
+                        }
+                    }
+                    .integrantes-grilla{
+                        grid-template-areas: 
+                        "caraNati datosNati caraFlute datosFlute"
+                        "caraFranco datosFranco caraDami datosDami";
+                        .fotoCara{
+                            img{
+                                height: 11rem; 
+                            }
+                        }
+                        .datos{
+                            width: 25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1300px){
+    .grilla-quienesSomos{
+        main{
+            .mainQuienesSomos__grilla{
+                .quienesSomos{
+                    width: 65rem;
+                }
+                .integrantes{
+                    .integrantes-grilla{
+                        .fotoCara{
+                            img{
+                                height: 16rem;
+                            }
+                        }
+                        .datos{
+                            width: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
