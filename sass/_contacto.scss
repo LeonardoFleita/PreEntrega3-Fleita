@@ -1,0 +1,144 @@
+@media(min-width: 500px){
+    .mainContacto{
+        background: url('../img/contacto/fondoContacto.jpg') rgb(44, 44, 44);
+        background-position: top center;
+        background-size: cover;
+        padding: 5rem 3rem 5rem 3rem;
+        .contacto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-family: 'Asap', sans-serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            .contacto__texto{
+                width: 40rem;
+                h1{
+                    color: white;
+                    font-size: 4rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 3rem;
+            form{
+                width: 40rem;
+                fieldset{
+                    color: $navColor;
+                    font-size: 1.4rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    border: none;
+                    font-weight: 300;
+                    label{
+                        margin-top: 0.4rem;
+                    }
+                    textarea{
+                        margin-top: 1.5rem;
+                        width: 40rem;
+                        resize: none;
+                    }
+                    .formulario__boton{
+                        font-size: 1.5rem;
+                        padding: 0.5rem;
+                        margin-top: 0.5rem;
+                        width: 15rem;
+                        background-color: $navColor;
+                        border: none;
+                        color: $pColor;
+                        transition: all 0.15s;
+                        &:hover{
+                            background-color: $navColorHover;
+                            color: white;
+                        }
+                    }
+                    .mb-3{
+                        padding-top: 1rem;
+                        width: 38.5rem;
+                        input{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            div{
+                img{
+                    margin-top: 5rem;
+                    height: 25rem;
+                }
+            } 
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .mainContacto{
+        padding: 5rem 5rem 5rem 5rem;
+        .contacto{
+            .contacto__texto{
+                width: 65rem;
+            }
+            .formulario{
+                form{
+                    width: 50rem;
+                    fieldset{
+                        textarea{
+                            width: 50rem;
+                        }
+                        .mb-3{
+                            width: 48.5rem;
+                        }
+                    }
+                }
+                div{
+                    img{
+                        height: 35rem;
+                    }
+                } 
+            }
+        }
+    }
+} 
+
+@media(min-width: 1024px){
+    .mainContacto{
+        .contacto{
+            .contacto__texto{
+                width: 91rem;
+                h1{
+                    font-size: 5rem;
+                }
+            }
+            .formulario{
+                flex-direction: row;
+                align-items: center;
+                form{
+                    width: 60rem;
+                    padding-right: 4rem;
+                    fieldset{
+                        textarea{
+                            width: 60rem;
+                            height: 25rem;
+                        }
+                        .mb-3{
+                            width: 58.5rem;
+                        }
+                    }
+                }
+                div{
+                    img{
+                        margin: 0;
+                        height: 45rem;
+                    }
+                } 
+            }
+        }
+    }
+}

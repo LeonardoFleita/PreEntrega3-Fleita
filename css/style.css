@@ -115,9 +115,6 @@ header nav ul .vivo a img:hover {
     align-self: center;
     justify-self: center;
   }
-  .grilla-index main .mainIndex__grilla .serpiente img {
-    height: 20rem;
-  }
   .grilla-index main .mainIndex__grilla .demo {
     padding-top: 8rem;
   }
@@ -151,9 +148,6 @@ header nav ul .vivo a img:hover {
     padding: 0;
     align-self: end;
   }
-  .grilla-index main .mainIndex__grilla .serpiente img {
-    height: 23.5rem;
-  }
   .grilla-index main .mainIndex__grilla .demo {
     padding: 0rem;
     align-self: end;
@@ -180,9 +174,6 @@ header nav ul .vivo a img:hover {
   }
   .grilla-index main .mainIndex__grilla .serpiente {
     padding: 0rem 0rem 0rem 5rem;
-  }
-  .grilla-index main .mainIndex__grilla .serpiente img {
-    height: 30rem;
   }
   .grilla-index main .mainIndex__grilla .demo {
     padding-bottom: 2rem;
@@ -280,7 +271,7 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos {
     width: 28rem;
   }
-  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos h1 {
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos h2 {
     font-family: "Asap", sans-serif;
     color: white;
     font-size: 2rem;
@@ -374,6 +365,193 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos {
     width: 30rem;
+  }
+}
+@media (min-width: 500px) {
+  .grilla-mesaDeAlLado {
+    display: grid;
+    grid-template-areas: "header" "mainMesa" "footer";
+  }
+  .grilla-mesaDeAlLado main {
+    background: url("../img/laMesaDeAlLado/fondoLaMesaDeAlLado.jpg") #000000;
+    background-size: cover;
+    background-position: top center;
+    grid-area: mainMesa;
+    padding: 7rem 5rem 5rem 5rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla {
+    display: grid;
+    grid-template-areas: "mesa" "carrusel";
+    justify-items: center;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+    grid-area: mesa;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa div {
+    padding-bottom: 5rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa div img {
+    height: 10rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa p {
+    color: white;
+    font-family: "Asap", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+    padding-top: 5rem;
+    width: 38rem;
+    grid-area: carrusel;
+  }
+}
+@media (min-width: 768px) {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+    width: 60rem;
+  }
+}
+@media (min-width: 1024px) {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+    width: 85rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa div img {
+    height: 13rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+    width: 85rem;
+  }
+}
+@media (min-width: 1300px) {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+    width: 100rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+    width: 100rem;
+  }
+}
+@media (min-width: 500px) {
+  .mainContacto {
+    background: url("../img/contacto/fondoContacto.jpg") rgb(44, 44, 44);
+    background-position: top center;
+    background-size: cover;
+    padding: 5rem 3rem 5rem 3rem;
+  }
+  .mainContacto .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  .mainContacto .contacto .contacto__texto {
+    width: 40rem;
+  }
+  .mainContacto .contacto .contacto__texto h1 {
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+  .mainContacto .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  .mainContacto .formulario form {
+    width: 40rem;
+  }
+  .mainContacto .formulario form fieldset {
+    color: #cbdd74;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+    font-weight: 300;
+  }
+  .mainContacto .formulario form fieldset label {
+    margin-top: 0.4rem;
+  }
+  .mainContacto .formulario form fieldset textarea {
+    margin-top: 1.5rem;
+    width: 40rem;
+    resize: none;
+  }
+  .mainContacto .formulario form fieldset .formulario__boton {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 15rem;
+    background-color: #cbdd74;
+    border: none;
+    color: #3d3d3d;
+    transition: all 0.15s;
+  }
+  .mainContacto .formulario form fieldset .formulario__boton:hover {
+    background-color: #469100;
+    color: white;
+  }
+  .mainContacto .formulario form fieldset .mb-3 {
+    padding-top: 1rem;
+    width: 38.5rem;
+  }
+  .mainContacto .formulario form fieldset .mb-3 input {
+    font-size: 1.2rem;
+  }
+  .mainContacto .formulario div img {
+    margin-top: 5rem;
+    height: 25rem;
+  }
+}
+@media (min-width: 768px) {
+  .mainContacto {
+    padding: 5rem 5rem 5rem 5rem;
+  }
+  .mainContacto .contacto .contacto__texto {
+    width: 65rem;
+  }
+  .mainContacto .contacto .formulario form {
+    width: 50rem;
+  }
+  .mainContacto .contacto .formulario form fieldset textarea {
+    width: 50rem;
+  }
+  .mainContacto .contacto .formulario form fieldset .mb-3 {
+    width: 48.5rem;
+  }
+  .mainContacto .contacto .formulario div img {
+    height: 35rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mainContacto .contacto .contacto__texto {
+    width: 91rem;
+  }
+  .mainContacto .contacto .contacto__texto h1 {
+    font-size: 5rem;
+  }
+  .mainContacto .contacto .formulario {
+    flex-direction: row;
+    align-items: center;
+  }
+  .mainContacto .contacto .formulario form {
+    width: 60rem;
+    padding-right: 4rem;
+  }
+  .mainContacto .contacto .formulario form fieldset textarea {
+    width: 60rem;
+    height: 25rem;
+  }
+  .mainContacto .contacto .formulario form fieldset .mb-3 {
+    width: 58.5rem;
+  }
+  .mainContacto .contacto .formulario div img {
+    margin: 0;
+    height: 45rem;
   }
 }
 @media (min-width: 500px) {

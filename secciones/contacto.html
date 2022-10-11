@@ -31,29 +31,28 @@
     <main class="mainContacto">
         <section class="contacto">
             <div class="contacto__texto">
-                <h1 class="contacto__texto--titulo">Contacto</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, totam! Consequuntur assumenda repudiandae facilis, praesentium minus veniam ea suscipit ullam laborum qui quos? Qui, odit quis voluptas sunt impedit vel.</p>
+                <h1>Contacto</h1>
+                <p>Si querés contactarnos, ya sea para participar de la consigna del día, para compartir algo con nosotres o les oyentes, o por cualquier otro motivo, podés hacerlo a continuación.</p>
             </div>
             <div class="formulario">
-                <div>
-                    <form action="">
-                        <fieldset>
-                            <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" id="nombre">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email">
-                            <label for="motivo">Motivo de contacto</label>
-                            <select id="motivo">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                            <textarea name="escriba" id="" cols="30" rows="10"></textarea>
-                            <input type="reset" class="formulario__boton">
-                            <input type="submit" class="formulario__boton">
-                        </fieldset>
-                    </form>
-                </div>
+                <form>
+                    <fieldset>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                        <label for="motivo">Motivo de contacto</label>
+                        <select id="motivo">
+                            <option value="consigna">Consigna</option>
+                            <option value="mensaje">Otro</option>
+                        </select>
+                        <textarea name="escriba" id="" cols="30" rows="10"></textarea>
+                        <div class="mb-3">
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <input type="submit" class="formulario__boton">
+                    </fieldset>
+                </form>
                 <div>
                     <img src="../img/contacto/tenedor.png" alt="foto tenedor" class="formulario__imagen">
                 </div>
@@ -74,6 +73,7 @@
         <img src="../img/logoBotellon.png" alt="Logo botellon" class="footer__logoBotellon">
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

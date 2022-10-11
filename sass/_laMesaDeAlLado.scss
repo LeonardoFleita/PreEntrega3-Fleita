@@ -1,0 +1,92 @@
+
+@media(min-width: 500px){
+    .grilla-mesaDeAlLado{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "mainMesa"
+        "footer";
+        main{
+            background: url('../img/laMesaDeAlLado/fondoLaMesaDeAlLado.jpg') #000000;
+            background-size: cover;
+            background-position: top center;
+            grid-area: mainMesa;
+            padding: 7rem 5rem 5rem 5rem;
+            .mainMesa__grilla{
+                display: grid;
+                grid-template-areas: 
+                "mesa"
+                "carrusel";
+                justify-items: center;
+                .mesa{
+                    grid-area: mesa;
+                    div{
+                        padding-bottom: 5rem;
+                        img{
+                            height: 10rem;
+                        }
+                    }
+                    p{
+                        color: white;
+                        font-family: 'Asap', sans-serif;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        padding-top: 1rem; 
+                    }
+                }
+                .album{
+                    padding-top: 5rem;
+                    width: 38rem;
+                    grid-area: carrusel;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .grilla-mesaDeAlLado{
+        main{
+            .mainMesa__grilla{
+                .album{
+                    width: 60rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .grilla-mesaDeAlLado{
+        main{
+            .mainMesa__grilla{
+                .mesa{
+                    width: 85rem;
+                    div{
+                        img{
+                            height: 13rem;
+                        }
+                    }
+                }
+                .album{
+                    width: 85rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1300px){
+    .grilla-mesaDeAlLado{
+        main{
+            .mainMesa__grilla{
+                .mesa{
+                    width: 100rem;
+                }
+                .album{
+                    width: 100rem;
+                }
+            }
+        }
+    }
+}
