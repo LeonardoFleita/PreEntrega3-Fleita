@@ -16,19 +16,28 @@
                 display: grid;
                 grid-template-areas: 
                 "mesa"
+                "titulo-img"
                 "carrusel";
                 justify-items: center;
                 .mesa{
                     grid-area: mesa;
                     width: 38rem;
-                    img{
-                        height: 10rem;
-                        margin-bottom: 5rem;
+                    h1{
+                        color: $navColor;
+                        font-size: 4rem;
+                        margin-bottom: 2rem;
                     }
                     p{
                         color: white;
                         @include texto;
                         padding-top: 1rem; 
+                    }
+                }
+                .titulo-img{
+                    grid-area: titulo-img;
+                    margin-top: 5rem;
+                    img{
+                        height: 10rem;
                     }
                 }
                 .album{
@@ -62,6 +71,8 @@
             .mainMesa__grilla{
                 .mesa{
                     width: 85rem;
+                }
+                .titulo-img{
                     img{
                         height: 13rem;
                     }
@@ -79,7 +90,7 @@
         main{
             .mainMesa__grilla{
                 .mesa{
-                    width: 90rem;
+                    width: 91rem;
                 }
                 .album{
                     width: 90rem;

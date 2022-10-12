@@ -388,16 +388,17 @@ header nav ul .vivo a img:hover {
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla {
     display: grid;
-    grid-template-areas: "mesa" "carrusel";
+    grid-template-areas: "mesa" "titulo-img" "carrusel";
     justify-items: center;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
     grid-area: mesa;
     width: 38rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa img {
-    height: 10rem;
-    margin-bottom: 5rem;
+  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa h1 {
+    color: #cbdd74;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa p {
     color: white;
@@ -406,6 +407,13 @@ header nav ul .vivo a img:hover {
     font-weight: 600;
     text-align: justify;
     padding-top: 1rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .titulo-img {
+    grid-area: titulo-img;
+    margin-top: 5rem;
+  }
+  .grilla-mesaDeAlLado main .mainMesa__grilla .titulo-img img {
+    height: 10rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
     padding-top: 5rem;
@@ -425,7 +433,7 @@ header nav ul .vivo a img:hover {
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
     width: 85rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa img {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .titulo-img img {
     height: 13rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
@@ -434,7 +442,7 @@ header nav ul .vivo a img:hover {
 }
 @media (min-width: 1300px) {
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
-    width: 90rem;
+    width: 91rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
     width: 90rem;
