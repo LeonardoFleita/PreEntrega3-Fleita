@@ -26,10 +26,8 @@
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: center;
-                    div{
-                        img{
-                            width: 24rem;
-                        }
+                    img{
+                        width: 24rem;
                     }
                     p{
                         @include texto;
@@ -45,16 +43,17 @@
                     justify-self: center;
                 }
                 .demo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                     padding-top: 8rem;
-                    div{
-                        img{
-                            width: 14rem;
-                        }
-                        iframe{
-                            padding-top: 1rem;
-                            width: 40rem; 
-                            height: 25rem;
-                        }
+                    img{
+                        width: 14rem;
+                    }
+                    iframe{
+                        padding-top: 1rem;
+                        width: 40rem; 
+                        height: 25rem;
                     }
                 }
                 .fotoPose{
@@ -117,10 +116,8 @@
                 align-items: center;
                 .sinopsis{
                     width: 50rem;
-                    div{
-                        img{
-                            width: 30rem;
-                        }
+                    img{
+                        width: 30rem;
                     }
                 }
                 .serpiente{
@@ -128,15 +125,12 @@
                 }
                 .demo{
                     padding-bottom: 2rem;
-                    div{
-                        img{
-                            width: 18rem;
-                        }
-                        iframe{
-                            padding-top: 4rem;
-                            width: 50rem;
-                            height: 30rem;
-                        }
+                    img{
+                        width: 18rem;
+                    }
+                    iframe{
+                        width: 50rem;
+                        height: 30rem;
                     }
                 }
             }

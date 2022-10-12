@@ -18,13 +18,12 @@
                 "fotoCalavera"
                 "integrantes";
                 justify-items: center;
+                justify-content: center;
                 .quienesSomos{
                     padding: 0rem 0rem 4rem 0rem;
                     grid-area: quienesSomos;
-                    div{
-                        img{
-                            height: 8rem;
-                        }
+                    img{
+                        height: 8rem;
                     }
                     p{
                         color: $pColor;
@@ -69,9 +68,8 @@
                         }
                         .caraNati{
                             grid-area: caraNati;
-                            padding-top: 2rem;
                             img{
-                                height: 15.5rem;
+                                height: 14rem;
                             }
                         }
                         .caraFlute{
@@ -82,9 +80,8 @@
                         }
                         .caraDami{
                             grid-area: caraDami;
-                            padding-top: 1.5rem;
                             img{
-                                height: 14rem;
+                                height: 13.5rem;
                             }
                         }
                         .datos{
@@ -92,8 +89,8 @@
                             h2{
                                 font-family: 'Roboto', sans-serif;
                                 color: white;
-                                font-size: 2rem;
-                                font-weight: 700;
+                                font-size: 2.2rem;
+                                font-weight: 600;
                             }
                             a{
                                 img{
@@ -108,6 +105,7 @@
                             p{
                                 color: $pColor;
                                 @include texto;
+                                font-size: 1.4rem;
                             }  
                         }
                         .datosNati{
@@ -141,15 +139,14 @@
                 justify-items: start;
                 align-items: center;
                 .quienesSomos{
+                    width: 40rem;
                     padding: 0;
-                    div{
-                        img{
-                            height: 6rem;
-                        }
+                    img{
+                        height: 7rem;
                     }
                 }
                 .fotoCalavera{
-                    padding: 0;
+                    padding: 3rem 0 0 2rem;
                     img{
                         height: 20rem;
                     }
@@ -171,14 +168,14 @@
         main{
             .mainQuienesSomos__grilla{
                 column-gap: 1rem;
-                justify-content: center;
                 .quienesSomos{
-                    width: 60rem;
-                    div{
-                        img{
-                            height: 8rem;
-                        }
+                    width: 55rem;
+                    img{
+                        height: 8rem;
                     }
+                }
+                .fotoCalavera{
+                    align-self: end;
                 }
                 .integrantes{
                     .integrantes-titulo{
@@ -190,11 +187,7 @@
                         grid-template-areas: 
                         "caraNati datosNati caraFlute datosFlute"
                         "caraFranco datosFranco caraDami datosDami";
-                        .fotoCara{
-                            img{
-                                height: 11rem; 
-                            }
-                        }
+                        column-gap: 3.5rem;
                         .datos{
                             width: 25rem;
                         }

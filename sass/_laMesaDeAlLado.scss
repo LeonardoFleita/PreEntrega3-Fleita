@@ -20,11 +20,10 @@
                 justify-items: center;
                 .mesa{
                     grid-area: mesa;
-                    div{
-                        padding-bottom: 5rem;
-                        img{
-                            height: 10rem;
-                        }
+                    width: 38rem;
+                    img{
+                        height: 10rem;
+                        margin-bottom: 5rem;
                     }
                     p{
                         color: white;
@@ -46,6 +45,9 @@
     .grilla-mesaDeAlLado{
         main{
             .mainMesa__grilla{
+                .mesa{
+                    width: 60rem;
+                }
                 .album{
                     width: 60rem;
                 }
@@ -60,10 +62,8 @@
             .mainMesa__grilla{
                 .mesa{
                     width: 85rem;
-                    div{
-                        img{
-                            height: 13rem;
-                        }
+                    img{
+                        height: 13rem;
                     }
                 }
                 .album{
@@ -79,10 +79,10 @@
         main{
             .mainMesa__grilla{
                 .mesa{
-                    width: 100rem;
+                    width: 90rem;
                 }
                 .album{
-                    width: 100rem;
+                    width: 90rem;
                 }
             }
         }
