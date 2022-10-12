@@ -22,8 +22,12 @@
                 .quienesSomos{
                     padding: 0rem 0rem 4rem 0rem;
                     grid-area: quienesSomos;
-                    img{
-                        height: 8rem;
+                    width: 40rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h1{
+                        @include titulo(white);
                     }
                     p{
                         color: $pColor;
@@ -141,9 +145,7 @@
                 .quienesSomos{
                     width: 40rem;
                     padding: 0;
-                    img{
-                        height: 7rem;
-                    }
+                    align-items: flex-start;
                 }
                 .fotoCalavera{
                     padding: 3rem 0 0 2rem;
@@ -170,9 +172,6 @@
                 column-gap: 1rem;
                 .quienesSomos{
                     width: 55rem;
-                    img{
-                        height: 8rem;
-                    }
                 }
                 .fotoCalavera{
                     align-self: end;

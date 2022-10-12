@@ -14,20 +14,28 @@
             .mainIndex__grilla{
                 display: grid;
                 column-gap: 2rem;
-                grid-template-areas: "sinopsis"
+                row-gap: 5rem;
+                grid-template-areas:
+                "titulo" 
+                "sinopsis"
                 "serpiente"
                 "demo"
                 "fotoCalaveras";
                 justify-content: center;
                 justify-items: center;
+                h1{
+                    @include titulo(white);
+                    grid-area: titulo;
+                }
                 .sinopsis{
                     grid-area: sinopsis;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: center;
+                    width: 40rem;
                     img{
-                        width: 24rem;
+                        height: 6.5rem;
                     }
                     p{
                         @include texto;
@@ -37,7 +45,7 @@
                     }
                 }
                 .serpiente{
-                    padding: 5rem 2.5rem 0rem 0rem;
+                    padding: 2rem 2.5rem 0rem 0rem;
                     grid-area: serpiente;
                     align-self: center;
                     justify-self: center;
@@ -46,9 +54,9 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    padding-top: 8rem;
+                    padding-top: 4rem;
                     img{
-                        width: 14rem;
+                        height: 6.5rem;
                     }
                     iframe{
                         padding-top: 1rem;
@@ -57,7 +65,7 @@
                     }
                 }
                 .fotoPose{
-                    padding-top: 8rem;
+                    padding-top: 4rem;
                     grid-area: fotoCalaveras;
                     justify-self: center;
                     align-self: flex-end;
@@ -72,8 +80,9 @@
         main{
             padding: 7rem 6rem 0rem 6rem;
             .mainIndex__grilla{
-                row-gap: 10rem;
-                grid-template-areas: "sinopsis sinopsis"
+                grid-template-areas: 
+                "titulo titulo"
+                "sinopsis sinopsis"
                 "demo serpiente"
                 "fotoCalaveras fotoCalaveras";
                 .sinopsis{
@@ -100,7 +109,7 @@
         main{
             .mainIndex__grilla{
                 .sinopsis{
-                    width: 85rem;
+                    width: 60rem;
                 }
             }
         }
@@ -111,13 +120,15 @@
     .grilla-index{
         main{
             .mainIndex__grilla{
-                grid-template-areas: "sinopsis serpiente"
+                grid-template-areas: 
+                "titulo titulo"
+                "sinopsis serpiente"
                 "fotoCalaveras demo";
                 align-items: center;
                 .sinopsis{
                     width: 50rem;
                     img{
-                        width: 30rem;
+                        height: 8rem;
                     }
                 }
                 .serpiente{
@@ -126,7 +137,7 @@
                 .demo{
                     padding-bottom: 2rem;
                     img{
-                        width: 18rem;
+                        height: 8rem;
                     }
                     iframe{
                         width: 50rem;

@@ -9,9 +9,7 @@
         align-items: center;
         .destacados__texto{
             h1{
-                color: white;
-                font-size: 4rem;
-                padding-bottom: 1rem;
+                @include titulo(white);
             }
             p{
                 @include texto;

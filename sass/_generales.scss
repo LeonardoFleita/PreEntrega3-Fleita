@@ -18,3 +18,12 @@ a{
     font-weight: 600;
     text-align: justify;
 }
+
+@mixin titulo($color){
+    color: $color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.6);
+}

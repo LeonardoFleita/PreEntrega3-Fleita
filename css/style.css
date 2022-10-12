@@ -87,9 +87,19 @@ header nav ul .vivo a img:hover {
     display: grid;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
-    grid-template-areas: "sinopsis" "serpiente" "demo" "fotoCalaveras";
+    row-gap: 5rem;
+    grid-template-areas: "titulo" "sinopsis" "serpiente" "demo" "fotoCalaveras";
     justify-content: center;
     justify-items: center;
+  }
+  .grilla-index main .mainIndex__grilla h1 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    grid-area: titulo;
   }
   .grilla-index main .mainIndex__grilla .sinopsis {
     grid-area: sinopsis;
@@ -97,9 +107,10 @@ header nav ul .vivo a img:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 40rem;
   }
   .grilla-index main .mainIndex__grilla .sinopsis img {
-    width: 24rem;
+    height: 6.5rem;
   }
   .grilla-index main .mainIndex__grilla .sinopsis p {
     font-family: "Roboto", sans-serif;
@@ -111,7 +122,7 @@ header nav ul .vivo a img:hover {
     text-align: justify;
   }
   .grilla-index main .mainIndex__grilla .serpiente {
-    padding: 5rem 2.5rem 0rem 0rem;
+    padding: 2rem 2.5rem 0rem 0rem;
     grid-area: serpiente;
     align-self: center;
     justify-self: center;
@@ -120,10 +131,10 @@ header nav ul .vivo a img:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 8rem;
+    padding-top: 4rem;
   }
   .grilla-index main .mainIndex__grilla .demo img {
-    width: 14rem;
+    height: 6.5rem;
   }
   .grilla-index main .mainIndex__grilla .demo iframe {
     padding-top: 1rem;
@@ -131,7 +142,7 @@ header nav ul .vivo a img:hover {
     height: 25rem;
   }
   .grilla-index main .mainIndex__grilla .fotoPose {
-    padding-top: 8rem;
+    padding-top: 4rem;
     grid-area: fotoCalaveras;
     justify-self: center;
     align-self: flex-end;
@@ -142,8 +153,7 @@ header nav ul .vivo a img:hover {
     padding: 7rem 6rem 0rem 6rem;
   }
   .grilla-index main .mainIndex__grilla {
-    row-gap: 10rem;
-    grid-template-areas: "sinopsis sinopsis" "demo serpiente" "fotoCalaveras fotoCalaveras";
+    grid-template-areas: "titulo titulo" "sinopsis sinopsis" "demo serpiente" "fotoCalaveras fotoCalaveras";
   }
   .grilla-index main .mainIndex__grilla .sinopsis {
     width: 60rem;
@@ -162,19 +172,19 @@ header nav ul .vivo a img:hover {
 }
 @media (min-width: 1024px) {
   .grilla-index main .mainIndex__grilla .sinopsis {
-    width: 85rem;
+    width: 60rem;
   }
 }
 @media (min-width: 1300px) {
   .grilla-index main .mainIndex__grilla {
-    grid-template-areas: "sinopsis serpiente" "fotoCalaveras demo";
+    grid-template-areas: "titulo titulo" "sinopsis serpiente" "fotoCalaveras demo";
     align-items: center;
   }
   .grilla-index main .mainIndex__grilla .sinopsis {
     width: 50rem;
   }
   .grilla-index main .mainIndex__grilla .sinopsis img {
-    width: 30rem;
+    height: 8rem;
   }
   .grilla-index main .mainIndex__grilla .serpiente {
     padding: 0rem 0rem 0rem 5rem;
@@ -183,7 +193,7 @@ header nav ul .vivo a img:hover {
     padding-bottom: 2rem;
   }
   .grilla-index main .mainIndex__grilla .demo img {
-    width: 18rem;
+    height: 8rem;
   }
   .grilla-index main .mainIndex__grilla .demo iframe {
     width: 50rem;
@@ -211,9 +221,18 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
     padding: 0rem 0rem 4rem 0rem;
     grid-area: quienesSomos;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos img {
-    height: 8rem;
+  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos h1 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos p {
     color: #3d3d3d;
@@ -323,9 +342,7 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
     width: 40rem;
     padding: 0;
-  }
-  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos img {
-    height: 7rem;
+    align-items: flex-start;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera {
     padding: 3rem 0 0 2rem;
@@ -344,9 +361,6 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos {
     width: 55rem;
-  }
-  .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos img {
-    height: 8rem;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera {
     align-self: end;
@@ -396,9 +410,12 @@ header nav ul .vivo a img:hover {
     width: 38rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa h1 {
-    color: #cbdd74;
-    font-size: 4rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
     margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa p {
     color: white;
@@ -408,11 +425,11 @@ header nav ul .vivo a img:hover {
     text-align: justify;
     padding-top: 1rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .titulo-img {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .tituloMesa-img {
     grid-area: titulo-img;
     margin-top: 5rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .titulo-img img {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .tituloMesa-img img {
     height: 10rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
@@ -433,7 +450,7 @@ header nav ul .vivo a img:hover {
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
     width: 85rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .titulo-img img {
+  .grilla-mesaDeAlLado main .mainMesa__grilla .tituloMesa-img img {
     height: 13rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
@@ -460,8 +477,11 @@ header nav ul .vivo a img:hover {
   }
   .mainDestacados .destacados__texto h1 {
     color: white;
-    font-size: 4rem;
-    padding-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
   }
   .mainDestacados .destacados__texto p {
     font-family: "Roboto", sans-serif;
@@ -515,7 +535,7 @@ header nav ul .vivo a img:hover {
     background: url("../img/contacto/fondoContacto.jpg") rgb(44, 44, 44);
     background-position: top center;
     background-size: cover;
-    padding: 5rem 3rem 5rem 3rem;
+    padding: 7rem 3rem 5rem 3rem;
   }
   .mainContacto .contacto {
     display: flex;
@@ -531,9 +551,12 @@ header nav ul .vivo a img:hover {
     width: 40rem;
   }
   .mainContacto .contacto .contacto__texto h1 {
-    color: #cbdd74;
-    font-size: 4rem;
-    padding-bottom: 1rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
   }
   .mainContacto .formulario {
     display: flex;
@@ -589,7 +612,7 @@ header nav ul .vivo a img:hover {
 }
 @media (min-width: 768px) {
   .mainContacto {
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 7rem 5rem 5rem 5rem;
   }
   .mainContacto .contacto .contacto__texto {
     width: 50rem;
@@ -607,9 +630,6 @@ header nav ul .vivo a img:hover {
 @media (min-width: 1024px) {
   .mainContacto .contacto .contacto__texto {
     width: 90rem;
-  }
-  .mainContacto .contacto .contacto__texto h1 {
-    font-size: 5rem;
   }
   .mainContacto .contacto .formulario {
     flex-direction: row;

@@ -23,9 +23,7 @@
                     grid-area: mesa;
                     width: 38rem;
                     h1{
-                        color: $navColor;
-                        font-size: 4rem;
-                        margin-bottom: 2rem;
+                        @include titulo(white);
                     }
                     p{
                         color: white;
@@ -33,7 +31,7 @@
                         padding-top: 1rem; 
                     }
                 }
-                .titulo-img{
+                .tituloMesa-img{
                     grid-area: titulo-img;
                     margin-top: 5rem;
                     img{
@@ -72,7 +70,7 @@
                 .mesa{
                     width: 85rem;
                 }
-                .titulo-img{
+                .tituloMesa-img{
                     img{
                         height: 13rem;
                     }
