@@ -1,4 +1,7 @@
 @media(min-width: 500px){
+    %mainpad{
+        padding: 7rem 5rem 0rem 5rem;
+    }
     .grilla-index{
         display: grid;
         grid-template-areas: 
@@ -10,7 +13,7 @@
             background-position: top center;
             background-size: cover;
             grid-area: mainIndex;
-            padding: 7rem 5rem 0rem 5rem;
+            @extend %mainpad;
             .mainIndex__grilla{
                 display: grid;
                 column-gap: 2rem;
