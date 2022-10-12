@@ -11,3 +11,9 @@ html{
 a{
     text-decoration: none;
 }
+
+@mixin texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}

@@ -102,8 +102,8 @@ header nav ul .vivo a img:hover {
     width: 24rem;
   }
   .grilla-index main .mainIndex__grilla .sinopsis p {
-    font-family: "Asap", sans-serif;
-    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #3d3d3d;
     padding-top: 2rem;
@@ -213,9 +213,9 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos p {
     color: #3d3d3d;
-    font-family: "Asap", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
     padding-top: 1rem;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera {
@@ -272,10 +272,10 @@ header nav ul .vivo a img:hover {
     width: 28rem;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos h2 {
-    font-family: "Asap", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 700;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos a img {
     height: 5em;
@@ -287,9 +287,9 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos p {
     color: #3d3d3d;
-    font-family: "Asap", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datosNati {
     grid-area: datosNati;
@@ -395,9 +395,9 @@ header nav ul .vivo a img:hover {
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa p {
     color: white;
-    font-family: "Asap", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
     padding-top: 1rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
@@ -431,6 +431,67 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 500px) {
+  .mainDestacados {
+    background: url("../img/index/fondoIndex.jpg") #B5B5B5;
+    background-size: cover;
+    background-position: top center;
+    padding: 7rem 3rem 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainDestacados .destacados__texto h1 {
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+  .mainDestacados .destacados__texto p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3d3d3d;
+  }
+  .mainDestacados .videos {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+  }
+  .mainDestacados .videos div {
+    margin: 0 0 5rem 0;
+  }
+  .mainDestacados .videos div iframe {
+    width: 40rem;
+    height: 22rem;
+  }
+  .mainDestacados .videos div h2 {
+    font-family: "Roboto", sans-serif;
+    color: #3d3d3d;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1024px) {
+  .mainDestacados {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+  .mainDestacados .videos {
+    width: 88rem;
+  }
+  .mainDestacados .videos div {
+    margin: 0 2rem 5rem 2rem;
+  }
+}
+@media (min-width: 1600px) {
+  .mainDestacados {
+    padding: 7rem 8rem 5rem 8rem;
+  }
+  .mainDestacados .videos {
+    width: 132rem;
+  }
+}
+@media (min-width: 500px) {
   .mainContacto {
     background: url("../img/contacto/fondoContacto.jpg") rgb(44, 44, 44);
     background-position: top center;
@@ -442,9 +503,9 @@ header nav ul .vivo a img:hover {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: "Asap", sans-serif;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
+    font-weight: 700;
   }
   .mainContacto .contacto .contacto__texto {
     width: 40rem;
@@ -502,9 +563,8 @@ header nav ul .vivo a img:hover {
   .mainContacto .formulario form fieldset .mb-3 input {
     font-size: 1.2rem;
   }
-  .mainContacto .formulario div img {
+  .mainContacto .formulario picture {
     margin-top: 5rem;
-    height: 25rem;
   }
 }
 @media (min-width: 768px) {
@@ -522,9 +582,6 @@ header nav ul .vivo a img:hover {
   }
   .mainContacto .contacto .formulario form fieldset .mb-3 {
     width: 48.5rem;
-  }
-  .mainContacto .contacto .formulario div img {
-    height: 35rem;
   }
 }
 @media (min-width: 1024px) {
@@ -549,9 +606,8 @@ header nav ul .vivo a img:hover {
   .mainContacto .contacto .formulario form fieldset .mb-3 {
     width: 58.5rem;
   }
-  .mainContacto .contacto .formulario div img {
+  .mainContacto .contacto .formulario picture {
     margin: 0;
-    height: 45rem;
   }
 }
 @media (min-width: 500px) {
