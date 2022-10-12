@@ -22,6 +22,9 @@
                 .mesa{
                     grid-area: mesa;
                     width: 38rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     h1{
                         @include titulo(white);
                     }
@@ -53,6 +56,7 @@
         main{
             .mainMesa__grilla{
                 .mesa{
+                    align-items: flex-start;
                     width: 60rem;
                 }
                 .album{

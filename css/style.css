@@ -97,7 +97,7 @@ header nav ul .vivo a img:hover {
   .grilla-index main .mainIndex__grilla h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
@@ -231,7 +231,7 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
@@ -249,7 +249,7 @@ header nav ul .vivo a img:hover {
     grid-area: fotoCalavera;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera img {
-    height: 25rem;
+    height: 20rem;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes {
     padding: 6rem 0rem 4rem 0rem;
@@ -349,9 +349,6 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera {
     padding: 3rem 0 0 2rem;
   }
-  .grilla-quienesSomos main .mainQuienesSomos__grilla .fotoCalavera img {
-    height: 20rem;
-  }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-titulo img {
     height: 7rem;
   }
@@ -410,11 +407,14 @@ header nav ul .vivo a img:hover {
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
     grid-area: mesa;
     width: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
@@ -442,6 +442,7 @@ header nav ul .vivo a img:hover {
 }
 @media (min-width: 768px) {
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+    align-items: flex-start;
     width: 60rem;
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .album {
@@ -480,7 +481,7 @@ header nav ul .vivo a img:hover {
   .mainDestacados .destacados__texto h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
@@ -555,7 +556,7 @@ header nav ul .vivo a img:hover {
   .mainContacto .contacto .contacto__texto h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
