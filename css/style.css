@@ -80,7 +80,7 @@ header nav ul .vivo a img:hover {
     grid-template-areas: "header" "mainIndex" "footer";
   }
   .grilla-index main {
-    background: url("../img/index/fondoIndex.jpg") #B5B5B5;
+    background: url("../img/index/fondoIndex.jpg") #a7a7a7;
     background-position: top center;
     background-size: cover;
     grid-area: mainIndex;
