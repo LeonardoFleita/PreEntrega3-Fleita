@@ -71,7 +71,7 @@ header nav ul .vivo a img:hover {
     padding: 0rem 0rem 0rem 1rem;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   .grilla-index main {
     padding: 7rem 5rem 0rem 5rem;
   }
@@ -85,7 +85,7 @@ header nav ul .vivo a img:hover {
     background-size: cover;
     grid-area: mainIndex;
   }
-  .grilla-index main .mainIndex__grilla {
+  .grilla-index main .main-index__grilla {
     display: grid;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -94,27 +94,29 @@ header nav ul .vivo a img:hover {
     justify-content: center;
     justify-items: center;
   }
-  .grilla-index main .mainIndex__grilla h1 {
+  .grilla-index main .main-index__grilla .titulo-index {
+    grid-area: titulo;
+  }
+  .grilla-index main .main-index__grilla .titulo-index h1 {
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
-    grid-area: titulo;
   }
-  .grilla-index main .mainIndex__grilla .sinopsis {
+  .grilla-index main .main-index__grilla .sinopsis {
     grid-area: sinopsis;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 40rem;
+    width: 20rem;
   }
-  .grilla-index main .mainIndex__grilla .sinopsis img {
+  .grilla-index main .main-index__grilla .sinopsis img {
     height: 6.5rem;
   }
-  .grilla-index main .mainIndex__grilla .sinopsis p {
+  .grilla-index main .main-index__grilla .sinopsis p {
     font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     font-weight: 600;
@@ -123,81 +125,90 @@ header nav ul .vivo a img:hover {
     padding-top: 2rem;
     text-align: justify;
   }
-  .grilla-index main .mainIndex__grilla .serpiente {
+  .grilla-index main .main-index__grilla .serpiente {
     padding: 2rem 2.5rem 0rem 0rem;
     grid-area: serpiente;
     align-self: center;
     justify-self: center;
   }
-  .grilla-index main .mainIndex__grilla .demo {
+  .grilla-index main .main-index__grilla .demo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 4rem;
   }
-  .grilla-index main .mainIndex__grilla .demo img {
+  .grilla-index main .main-index__grilla .demo img {
     height: 6.5rem;
   }
-  .grilla-index main .mainIndex__grilla .demo iframe {
+  .grilla-index main .main-index__grilla .demo iframe {
     padding-top: 1rem;
-    width: 40rem;
-    height: 25rem;
+    width: 25rem;
+    height: 10rem;
   }
-  .grilla-index main .mainIndex__grilla .fotoPose {
+  .grilla-index main .main-index__grilla .fotoPose {
     padding-top: 4rem;
     grid-area: fotoCalaveras;
     justify-self: center;
     align-self: flex-end;
   }
 }
+@media (min-width: 500px) {
+  .grilla-index main .main-index__grilla .sinopsis {
+    width: 40rem;
+  }
+  .grilla-index main .main-index__grilla .demo iframe {
+    width: 40rem;
+    height: 25rem;
+  }
+}
 @media (min-width: 768px) {
   .grilla-index main {
     padding: 7rem 6rem 0rem 6rem;
   }
-  .grilla-index main .mainIndex__grilla {
+  .grilla-index main .main-index__grilla {
     grid-template-areas: "titulo titulo" "sinopsis sinopsis" "demo serpiente" "fotoCalaveras fotoCalaveras";
   }
-  .grilla-index main .mainIndex__grilla .sinopsis {
+  .grilla-index main .main-index__grilla .sinopsis {
     width: 60rem;
   }
-  .grilla-index main .mainIndex__grilla .serpiente {
+  .grilla-index main .main-index__grilla .serpiente {
     padding: 0;
     align-self: end;
   }
-  .grilla-index main .mainIndex__grilla .demo {
+  .grilla-index main .main-index__grilla .demo {
     padding: 0rem;
     align-self: end;
   }
-  .grilla-index main .mainIndex__grilla .fotoPose {
+  .grilla-index main .main-index__grilla .fotoPose {
     padding: 0rem;
   }
 }
 @media (min-width: 1024px) {
-  .grilla-index main .mainIndex__grilla .sinopsis {
+  .grilla-index main .main-index__grilla .sinopsis {
     width: 60rem;
   }
 }
 @media (min-width: 1300px) {
-  .grilla-index main .mainIndex__grilla {
+  .grilla-index main .main-index__grilla {
     grid-template-areas: "titulo titulo" "sinopsis serpiente" "fotoCalaveras demo";
     align-items: center;
   }
-  .grilla-index main .mainIndex__grilla .sinopsis {
+  .grilla-index main .main-index__grilla .sinopsis {
     width: 50rem;
   }
-  .grilla-index main .mainIndex__grilla .sinopsis img {
+  .grilla-index main .main-index__grilla .sinopsis img {
     height: 8rem;
   }
-  .grilla-index main .mainIndex__grilla .serpiente {
+  .grilla-index main .main-index__grilla .serpiente {
     padding: 0rem 0rem 0rem 5rem;
   }
-  .grilla-index main .mainIndex__grilla .demo {
+  .grilla-index main .main-index__grilla .demo {
     padding-bottom: 2rem;
   }
-  .grilla-index main .mainIndex__grilla .demo img {
+  .grilla-index main .main-index__grilla .demo img {
     height: 8rem;
   }
-  .grilla-index main .mainIndex__grilla .demo iframe {
+  .grilla-index main .main-index__grilla .demo iframe {
     width: 50rem;
     height: 30rem;
   }
@@ -653,7 +664,7 @@ header nav ul .vivo a img:hover {
     margin: 0;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   footer {
     background-color: rgb(34, 34, 34);
     border: 1px white solid;
@@ -667,7 +678,7 @@ header nav ul .vivo a img:hover {
     padding: 0.8rem 0rem 0.8rem 0rem;
   }
   footer img {
-    height: 6rem;
+    height: 4rem;
     padding: 2rem;
   }
   footer div {
@@ -679,7 +690,7 @@ header nav ul .vivo a img:hover {
   footer div h3 {
     color: #cbdd74;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0;
   }
   footer div div {
@@ -688,12 +699,24 @@ header nav ul .vivo a img:hover {
     justify-content: center;
   }
   footer div div a img {
-    height: 4.3rem;
+    height: 3.5rem;
     padding: 1rem;
     transition: all 0.5s;
   }
   footer div div a img:hover {
     transform: scale(1.2);
+  }
+}
+@media (min-width: 500px) {
+  footer img {
+    height: 6rem;
+    padding: 2rem;
+  }
+  footer div h3 {
+    font-size: 1.6rem;
+  }
+  footer div div a img {
+    height: 4.3rem;
   }
 }
 @media (min-width: 768px) {
