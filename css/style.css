@@ -14,8 +14,8 @@ a {
 }
 
 header {
-  padding-top: 28rem;
-  background: url("../img/header.jpg") #000000;
+  padding-top: 18rem;
+  background: url("../img/header-XS.jpg") #000000;
   background-position: top center;
   grid-area: header;
 }
@@ -57,6 +57,20 @@ header nav ul .vivo a img:hover {
   transform: scale(1.1);
 }
 
+@media (min-width: 500px) {
+  header {
+    padding-top: 22rem;
+    background: url("../img/header-S.jpg") #000000;
+    background-position: top center;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    padding-top: 28rem;
+    background: url("../img/header.jpg") #000000;
+    background-position: top center;
+  }
+}
 @media (min-width: 1024px) {
   header nav ul {
     flex-direction: row;
@@ -73,7 +87,7 @@ header nav ul .vivo a img:hover {
 }
 @media (min-width: 300px) {
   .grilla-index main {
-    padding: 7rem 5rem 0rem 5rem;
+    padding: 7rem 1rem 0rem 1rem;
   }
   .grilla-index {
     display: grid;
@@ -100,7 +114,7 @@ header nav ul .vivo a img:hover {
   .grilla-index main .main-index__grilla .titulo-index h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
@@ -109,16 +123,16 @@ header nav ul .vivo a img:hover {
     grid-area: sinopsis;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: central;
     justify-content: center;
-    width: 20rem;
+    width: 22rem;
   }
   .grilla-index main .main-index__grilla .sinopsis img {
     height: 6.5rem;
   }
   .grilla-index main .main-index__grilla .sinopsis p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: justify;
     color: #3d3d3d;
@@ -134,16 +148,16 @@ header nav ul .vivo a img:hover {
   .grilla-index main .main-index__grilla .demo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 4rem;
   }
   .grilla-index main .main-index__grilla .demo img {
     height: 6.5rem;
   }
   .grilla-index main .main-index__grilla .demo iframe {
-    padding-top: 1rem;
-    width: 25rem;
-    height: 10rem;
+    padding-top: 2rem;
+    width: 28rem;
+    height: 13rem;
   }
   .grilla-index main .main-index__grilla .fotoPose {
     padding-top: 4rem;
@@ -153,8 +167,29 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 500px) {
+  .grilla-index main {
+    padding: 7rem 5rem 0rem 5rem;
+  }
+  .grilla-index main .main-index__grilla .titulo-index h1 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 4.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+  }
   .grilla-index main .main-index__grilla .sinopsis {
+    align-items: flex-start;
     width: 40rem;
+  }
+  .grilla-index main .main-index__grilla .sinopsis p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .grilla-index main .main-index__grilla .demo {
+    align-items: flex-start;
   }
   .grilla-index main .main-index__grilla .demo iframe {
     width: 40rem;
@@ -323,10 +358,9 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datos p {
     color: #3d3d3d;
     font-family: "Roboto", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: justify;
-    font-size: 1.4rem;
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .integrantes .integrantes-grilla .datosNati {
     grid-area: datosNati;
@@ -678,8 +712,8 @@ header nav ul .vivo a img:hover {
     padding: 0.8rem 0rem 0.8rem 0rem;
   }
   footer img {
-    height: 4rem;
-    padding: 2rem;
+    height: 3.5rem;
+    padding: 1rem;
   }
   footer div {
     display: flex;
@@ -690,7 +724,7 @@ header nav ul .vivo a img:hover {
   footer div h3 {
     color: #cbdd74;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin: 0;
   }
   footer div div {
@@ -699,7 +733,7 @@ header nav ul .vivo a img:hover {
     justify-content: center;
   }
   footer div div a img {
-    height: 3.5rem;
+    height: 3rem;
     padding: 1rem;
     transition: all 0.5s;
   }

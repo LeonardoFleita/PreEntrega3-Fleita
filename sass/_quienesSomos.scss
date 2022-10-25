@@ -27,11 +27,11 @@
                     flex-direction: column;
                     align-items: center;
                     h1{
-                        @include titulo(white);
+                        @include titulos(white, 4.2rem);
                     }
                     p{
                         color: $pColor;
-                        @include texto;
+                        @include parrafo(1.7rem);
                         padding-top: 1rem;  
                     }
                 }
@@ -108,8 +108,7 @@
                             }
                             p{
                                 color: $pColor;
-                                @include texto;
-                                font-size: 1.4rem;
+                                @include parrafo(1.4rem);
                             }  
                         }
                         .datosNati{

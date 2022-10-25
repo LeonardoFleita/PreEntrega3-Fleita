@@ -1,7 +1,7 @@
 
 header{
-    padding-top: 28rem;
-    background: url('../img/header.jpg') #000000;
+    padding-top: 18rem;
+    background: url('../img/header-XS.jpg') #000000;
     background-position: top center;
     grid-area: header;
     nav{
@@ -42,6 +42,22 @@ header{
                 }
             }
         }
+    }
+}
+
+@media(min-width: 500px){
+    header{
+    padding-top: 22rem;
+    background: url('../img/header-S.jpg') #000000;
+    background-position: top center;
+    }
+}
+
+@media(min-width: 768px){
+    header{
+    padding-top: 28rem;
+    background: url('../img/header.jpg') #000000;
+    background-position: top center;
     }
 }
 

@@ -9,10 +9,10 @@
         align-items: center;
         .destacados__texto{
             h1{
-                @include titulo(white);
+                @include titulos(white, 4.2rem);
             }
             p{
-                @include texto;
+                @include parrafo(1.7rem);
                 color: $pColor;
             }
         }

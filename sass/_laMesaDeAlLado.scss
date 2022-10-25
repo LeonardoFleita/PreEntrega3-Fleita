@@ -26,11 +26,11 @@
                     flex-direction: column;
                     align-items: center;
                     h1{
-                        @include titulo(white);
+                        @include titulos(white, 4.2rem);
                     }
                     p{
                         color: white;
-                        @include texto;
+                        @include parrafo(1.7rem);
                         padding-top: 1rem; 
                     }
                 }

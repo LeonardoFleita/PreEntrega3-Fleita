@@ -1,6 +1,6 @@
 @media(min-width: 300px){
     %mainpad{
-        padding: 7rem 5rem 0rem 5rem;
+        padding: 7rem 1rem 0rem 1rem;
     }
     .grilla-index{
         display: grid;
@@ -29,21 +29,21 @@
                 .titulo-index{
                     grid-area: titulo;
                     h1{
-                        @include titulo(white);
+                        @include titulos(white, 3rem);
                     }
                 }
                 .sinopsis{
                     grid-area: sinopsis;
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-start;
+                    align-items: central;
                     justify-content: center;
-                    width: 20rem;
+                    width: 22rem;
                     img{
                         height: 6.5rem;
                     }
                     p{
-                        @include texto;
+                        @include parrafo(1.2rem);
                         color: $pColor;
                         padding-top: 2rem;
                         text-align: justify;
@@ -58,15 +58,15 @@
                 .demo{
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-start;
+                    align-items: center;
                     padding-top: 4rem;
                     img{
                         height: 6.5rem;
                     }
                     iframe{
-                        padding-top: 1rem;
-                        width: 25rem; 
-                        height: 10rem;
+                        padding-top: 2rem;
+                        width: 28rem; 
+                        height: 13rem;
                     }
                 }
                 .fotoPose{
@@ -83,11 +83,22 @@
 @media(min-width: 500px){
     .grilla-index{
         main{
+            padding: 7rem 5rem 0rem 5rem;
             .main-index__grilla{
+                .titulo-index{
+                    h1{
+                        @include titulos(white, 4.2rem)
+                    }
+                }
                 .sinopsis{
+                    align-items: flex-start;
                     width: 40rem;
+                    p{
+                        @include parrafo(1.7rem)
+                    }
                 }
                 .demo{
+                    align-items: flex-start;
                     iframe{
                         width: 40rem; 
                         height: 25rem;
