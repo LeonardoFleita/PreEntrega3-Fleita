@@ -29,28 +29,29 @@
                 .titulo-index{
                     grid-area: titulo;
                     h1{
-                        @include titulos(white, 3rem);
+                        @include titulos(white, 3.5rem);
                     }
                 }
                 .sinopsis{
                     grid-area: sinopsis;
                     display: flex;
                     flex-direction: column;
-                    align-items: central;
+                    align-items: center;
                     justify-content: center;
                     width: 22rem;
                     img{
-                        height: 6.5rem;
+                        width: 16rem;
+                        margin-bottom: 3rem; 
                     }
                     p{
                         @include parrafo(1.4rem);
                         color: $pColor;
-                        padding-top: 2rem;
+                        margin-bottom: 1.5rem;
                         text-align: justify;
                     }
                 }
                 .serpiente{
-                    padding: 2rem 2.5rem 0rem 0rem;
+                    margin-top: 1rem;
                     grid-area: serpiente;
                     align-self: center;
                     justify-self: center;
@@ -59,18 +60,21 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    padding-top: 4rem;
+                    margin-top: 1rem;
                     img{
-                        height: 6.5rem;
+                        width: 10rem;
+                        margin-bottom: 3rem;
                     }
                     iframe{
-                        padding-top: 2rem;
-                        width: 28rem; 
+                        width: 24rem; 
                         height: 13rem;
+                        box-shadow: 10px -5px 8px 0px rgba(0,0,0,0.26);
+                        -webkit-box-shadow: 10px -5px 8px 0px rgba(0,0,0,0.26);
+                        -moz-box-shadow: 10px -5px 8px 0px rgba(0,0,0,0.26);
                     }
                 }
                 .fotoPose{
-                    padding-top: 4rem;
+                    margin-top: 2rem;
                     grid-area: fotoCalaveras;
                     justify-self: center;
                     align-self: flex-end;
@@ -93,15 +97,21 @@
                 .sinopsis{
                     align-items: flex-start;
                     width: 40rem;
+                    img{
+                        width: 20rem;
+                    }
                     p{
                         @include parrafo(1.7rem)
                     }
                 }
                 .demo{
                     align-items: flex-start;
+                    img{
+                        width: 12rem;
+                    }
                     iframe{
                         width: 40rem; 
-                        height: 25rem;
+                        height: 22rem;
                     }
                 }
             }
@@ -121,17 +131,23 @@
                 "fotoCalaveras fotoCalaveras";
                 .sinopsis{
                     width: 60rem;
+                    img{
+                        width: 22rem;
+                    }
                 }
                 .serpiente{
-                    padding: 0;
+                    margin: 0;
                     align-self: end;
                 }
                 .demo{
-                    padding: 0rem;
+                    margin-bottom: 0.5rem;
                     align-self: end;
+                    img{
+                        width: 13rem;
+                    }
                 }
                 .fotoPose{
-                    padding: 0rem;
+                    margin: 0rem;
                 }
             }
         }
@@ -162,20 +178,17 @@
                 .sinopsis{
                     width: 50rem;
                     img{
-                        height: 8rem;
+                        width: 24rem;
                     }
                 }
-                .serpiente{
-                    padding: 0rem 0rem 0rem 5rem;
-                }
                 .demo{
-                    padding-bottom: 2rem;
+                    margin-bottom: 2rem;
                     img{
-                        height: 8rem;
+                        width: 15rem;
                     }
                     iframe{
                         width: 50rem;
-                        height: 30rem;
+                        height: 28rem;
                     }
                 }
             }

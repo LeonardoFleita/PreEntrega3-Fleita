@@ -113,8 +113,8 @@ header nav ul .vivo a img:hover {
   }
   .grilla-index main .main-index__grilla .titulo-index h1 {
     color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 3rem;
+    font-family: "Varela Round", sans-serif;
+    font-size: 3.5rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
@@ -123,12 +123,13 @@ header nav ul .vivo a img:hover {
     grid-area: sinopsis;
     display: flex;
     flex-direction: column;
-    align-items: central;
+    align-items: center;
     justify-content: center;
     width: 22rem;
   }
   .grilla-index main .main-index__grilla .sinopsis img {
-    height: 6.5rem;
+    width: 16rem;
+    margin-bottom: 3rem;
   }
   .grilla-index main .main-index__grilla .sinopsis p {
     font-family: "Roboto", sans-serif;
@@ -136,11 +137,11 @@ header nav ul .vivo a img:hover {
     font-weight: 600;
     text-align: justify;
     color: #3d3d3d;
-    padding-top: 2rem;
+    margin-bottom: 1.5rem;
     text-align: justify;
   }
   .grilla-index main .main-index__grilla .serpiente {
-    padding: 2rem 2.5rem 0rem 0rem;
+    margin-top: 1rem;
     grid-area: serpiente;
     align-self: center;
     justify-self: center;
@@ -149,18 +150,21 @@ header nav ul .vivo a img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    margin-top: 1rem;
   }
   .grilla-index main .main-index__grilla .demo img {
-    height: 6.5rem;
+    width: 10rem;
+    margin-bottom: 3rem;
   }
   .grilla-index main .main-index__grilla .demo iframe {
-    padding-top: 2rem;
-    width: 28rem;
+    width: 24rem;
     height: 13rem;
+    box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
   }
   .grilla-index main .main-index__grilla .fotoPose {
-    padding-top: 4rem;
+    margin-top: 2rem;
     grid-area: fotoCalaveras;
     justify-self: center;
     align-self: flex-end;
@@ -172,7 +176,7 @@ header nav ul .vivo a img:hover {
   }
   .grilla-index main .main-index__grilla .titulo-index h1 {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -181,6 +185,9 @@ header nav ul .vivo a img:hover {
   .grilla-index main .main-index__grilla .sinopsis {
     align-items: flex-start;
     width: 40rem;
+  }
+  .grilla-index main .main-index__grilla .sinopsis img {
+    width: 20rem;
   }
   .grilla-index main .main-index__grilla .sinopsis p {
     font-family: "Roboto", sans-serif;
@@ -191,9 +198,12 @@ header nav ul .vivo a img:hover {
   .grilla-index main .main-index__grilla .demo {
     align-items: flex-start;
   }
+  .grilla-index main .main-index__grilla .demo img {
+    width: 12rem;
+  }
   .grilla-index main .main-index__grilla .demo iframe {
     width: 40rem;
-    height: 25rem;
+    height: 22rem;
   }
 }
 @media (min-width: 768px) {
@@ -206,16 +216,22 @@ header nav ul .vivo a img:hover {
   .grilla-index main .main-index__grilla .sinopsis {
     width: 60rem;
   }
+  .grilla-index main .main-index__grilla .sinopsis img {
+    width: 22rem;
+  }
   .grilla-index main .main-index__grilla .serpiente {
-    padding: 0;
+    margin: 0;
     align-self: end;
   }
   .grilla-index main .main-index__grilla .demo {
-    padding: 0rem;
+    margin-bottom: 0.5rem;
     align-self: end;
   }
+  .grilla-index main .main-index__grilla .demo img {
+    width: 13rem;
+  }
   .grilla-index main .main-index__grilla .fotoPose {
-    padding: 0rem;
+    margin: 0rem;
   }
 }
 @media (min-width: 1024px) {
@@ -232,20 +248,17 @@ header nav ul .vivo a img:hover {
     width: 50rem;
   }
   .grilla-index main .main-index__grilla .sinopsis img {
-    height: 8rem;
-  }
-  .grilla-index main .main-index__grilla .serpiente {
-    padding: 0rem 0rem 0rem 5rem;
+    width: 24rem;
   }
   .grilla-index main .main-index__grilla .demo {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   .grilla-index main .main-index__grilla .demo img {
-    height: 8rem;
+    width: 15rem;
   }
   .grilla-index main .main-index__grilla .demo iframe {
     width: 50rem;
-    height: 30rem;
+    height: 28rem;
   }
 }
 @media (min-width: 500px) {
@@ -276,7 +289,7 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos h1 {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -458,7 +471,7 @@ header nav ul .vivo a img:hover {
   }
   .grilla-mesaDeAlLado main .mainMesa__grilla .mesa h1 {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -525,7 +538,7 @@ header nav ul .vivo a img:hover {
   }
   .mainDestacados .destacados__texto h1 {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -600,7 +613,7 @@ header nav ul .vivo a img:hover {
   }
   .mainContacto .contacto .contacto__texto h1 {
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
