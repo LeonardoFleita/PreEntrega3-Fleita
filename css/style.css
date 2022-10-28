@@ -116,8 +116,8 @@ header nav ul .vivo a img:hover {
     font-family: "Varela Round", sans-serif;
     font-size: 3.5rem;
     font-weight: 400;
-    margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
   .grilla-index main .main-index__grilla .sinopsis {
     grid-area: sinopsis;
@@ -179,8 +179,8 @@ header nav ul .vivo a img:hover {
     font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
-    margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
   .grilla-index main .main-index__grilla .sinopsis {
     align-items: flex-start;
@@ -293,7 +293,7 @@ header nav ul .vivo a img:hover {
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
   .grilla-quienesSomos main .mainQuienesSomos__grilla .quienesSomos p {
     color: #3d3d3d;
@@ -445,7 +445,7 @@ header nav ul .vivo a img:hover {
     width: 30rem;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   .grilla-mesaDeAlLado {
     display: grid;
     grid-template-areas: "header" "mainMesa" "footer";
@@ -455,74 +455,111 @@ header nav ul .vivo a img:hover {
     background-size: cover;
     background-position: top center;
     grid-area: mainMesa;
-    padding: 7rem 5rem 5rem 5rem;
+    padding: 7rem 1rem 5rem 1rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla {
+  .grilla-mesaDeAlLado main .main-mesa__grilla {
     display: grid;
     grid-template-areas: "mesa" "titulo-img" "carrusel";
     justify-items: center;
+    row-gap: 2rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
     grid-area: mesa;
-    width: 38rem;
+    width: 22rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa h1 {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa h1 {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa p {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img {
+    grid-area: titulo-img;
+    align-self: center;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
+    height: 8rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .album {
+    width: 22rem;
+    grid-area: carrusel;
+    box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
+  }
+}
+@media (min-width: 500px) {
+  .grilla-mesaDeAlLado main {
+    padding: 7rem 5rem 5rem 5rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla {
+    row-gap: 3rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
+    width: 38rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa h1 {
     color: white;
     font-family: "Varela Round", sans-serif;
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa p {
-    color: white;
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa p {
     font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     font-weight: 600;
     text-align: justify;
-    padding-top: 1rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .tituloMesa-img {
-    grid-area: titulo-img;
-    margin-top: 5rem;
-  }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .tituloMesa-img img {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
     height: 10rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
-    padding-top: 5rem;
+  .grilla-mesaDeAlLado main .main-mesa__grilla .album {
     width: 38rem;
-    grid-area: carrusel;
   }
 }
 @media (min-width: 768px) {
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+  .grilla-mesaDeAlLado main .main-mesa__grilla {
+    row-gap: 4rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
     align-items: flex-start;
     width: 60rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .album {
     width: 60rem;
   }
 }
 @media (min-width: 1024px) {
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
     width: 85rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .tituloMesa-img img {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
     height: 13rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .album {
     width: 85rem;
   }
 }
 @media (min-width: 1300px) {
-  .grilla-mesaDeAlLado main .mainMesa__grilla .mesa {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
     width: 91rem;
   }
-  .grilla-mesaDeAlLado main .mainMesa__grilla .album {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .album {
     width: 90rem;
   }
 }
@@ -542,7 +579,7 @@ header nav ul .vivo a img:hover {
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
   .mainDestacados .destacados__texto p {
     font-family: "Roboto", sans-serif;
@@ -617,7 +654,7 @@ header nav ul .vivo a img:hover {
     font-size: 4.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
   .mainContacto .formulario {
     display: flex;

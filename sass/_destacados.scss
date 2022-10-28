@@ -9,7 +9,7 @@
         align-items: center;
         .destacados__texto{
             h1{
-                @include titulos(white, 4.2rem);
+                @include titulos(white, 4.2rem, 2rem);
             }
             p{
                 @include parrafo(1.7rem);

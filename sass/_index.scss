@@ -29,7 +29,7 @@
                 .titulo-index{
                     grid-area: titulo;
                     h1{
-                        @include titulos(white, 3.5rem);
+                        @include titulos(white, 3.5rem, 0);
                     }
                 }
                 .sinopsis{
@@ -91,7 +91,7 @@
             .main-index__grilla{
                 .titulo-index{
                     h1{
-                        @include titulos(white, 4.2rem)
+                        @include titulos(white, 4.2rem, 0)
                     }
                 }
                 .sinopsis{

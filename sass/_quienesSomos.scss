@@ -27,7 +27,7 @@
                     flex-direction: column;
                     align-items: center;
                     h1{
-                        @include titulos(white, 4.2rem);
+                        @include titulos(white, 4.2rem, 2rem);
                     }
                     p{
                         color: $pColor;

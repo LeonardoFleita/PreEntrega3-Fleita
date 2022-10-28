@@ -19,12 +19,12 @@ a{
     text-align: justify;
 }
 
-@mixin titulos($color, $size){
+@mixin titulos($color, $size, $marg){
     color: $color;
     font-family: 'Varela Round', sans-serif;
     font-size: $size;
     font-weight: 400;
-    margin-bottom: 2rem;
-    text-shadow: 4px 4px 5px rgba(0,0,0,0.6);
+    margin-bottom: $marg;
+    text-shadow: 4px 3px 5px rgba(0,0,0,0.6);
 }
 
