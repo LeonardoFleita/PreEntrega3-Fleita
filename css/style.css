@@ -315,22 +315,21 @@ header nav ul .vivo a img:hover {
     grid-area: integrantes;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-titulo img {
     height: 6rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla {
     display: grid;
-    grid-template-areas: "caraNati datosNati" "caraFlute datosFlute" "caraFranco datosFranco" "caraDami datosDami";
-    row-gap: 8rem;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    grid-template-areas: "caraNati" "datosNati" "caraFlute" "datosFlute" "caraFranco" "datosFranco" "caraDami" "datosDami";
+    row-gap: 2rem;
     justify-items: center;
     align-items: center;
-    padding-top: 5rem;
+    margin-top: 5rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .fotoCara img {
+    margin-top: 1.5rem;
     height: 11.5rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .caraNati {
@@ -352,7 +351,10 @@ header nav ul .vivo a img:hover {
     height: 12rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos {
-    width: 22rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos h2 {
     font-family: "Roboto", sans-serif;
@@ -370,11 +372,11 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos p {
     color: #3d3d3d;
-    width: 14rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     text-align: justify;
+    text-align: center;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datosNati {
     grid-area: datosNati;
@@ -420,7 +422,14 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-titulo img {
     height: 8rem;
   }
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla {
+    grid-template-areas: "caraNati datosNati" "caraFlute datosFlute" "caraFranco datosFranco" "caraDami datosDami";
+    row-gap: 8rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .fotoCara img {
+    margin: 0;
     height: 13rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .caraNati img {
@@ -430,7 +439,8 @@ header nav ul .vivo a img:hover {
     height: 13.5rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos {
-    width: 28rem;
+    width: 25rem;
+    align-items: flex-start;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos h2 {
     font-size: 2.2rem;
@@ -439,7 +449,6 @@ header nav ul .vivo a img:hover {
     height: 5rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos p {
-    width: 20rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
@@ -454,7 +463,6 @@ header nav ul .vivo a img:hover {
     -moz-column-gap: 2em;
          column-gap: 2em;
     grid-template-areas: "quienesSomos fotoCalavera" "integrantes integrantes";
-    justify-items: start;
     align-items: center;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos {
@@ -487,9 +495,6 @@ header nav ul .vivo a img:hover {
     grid-template-areas: "caraNati datosNati caraFlute datosFlute" "caraFranco datosFranco caraDami datosDami";
     -moz-column-gap: 3.5rem;
          column-gap: 3.5rem;
-  }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos {
-    width: 25rem;
   }
 }
 @media (min-width: 1300px) {
