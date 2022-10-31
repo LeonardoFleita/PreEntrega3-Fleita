@@ -1,19 +1,22 @@
-@media(min-width: 500px){
-    .mainContacto{
+@media(min-width: 300px){
+    .main-contacto{
         background: url('../img/contacto/fondoContacto.jpg') rgb(44, 44, 44);
         background-position: top center;
         background-size: cover;
-        padding: 7rem 3rem 5rem 3rem;
+        padding: 7rem 1rem 5rem 1rem;
         .contacto{
             display: flex;
             flex-direction: column;
             align-items: center;
             color: white;
-            @include parrafo(1.7rem);
+            @include parrafo(1.4rem);
             .contacto__texto{
-                width: 40rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 22rem;
                 h1{
-                    @include titulos(white, 4.2rem, 2rem);
+                    @include titulos(white, 3rem, 2rem);
                 }
             }
         }
@@ -24,7 +27,7 @@
             align-items: center;
             padding-top: 3rem;
             form{
-                width: 40rem;
+                width: 22rem;
                 fieldset{
                     color: $navColor;
                     font-size: 1.4rem;
@@ -38,14 +41,14 @@
                     }
                     textarea{
                         margin-top: 1.5rem;
-                        width: 40rem;
+                        width: 22rem;
                         resize: none;
                     }
                     .formulario__boton{
                         font-size: 1.5rem;
                         padding: 0.5rem;
                         margin-top: 0.5rem;
-                        width: 15rem;
+                        width: 10rem;
                         background-color: $navColor;
                         border: none;
                         color: $pColor;
@@ -57,7 +60,7 @@
                     }
                     .mb-3{
                         padding-top: 1rem;
-                        width: 38.5rem;
+                        width: 20.5rem;
                         input{
                             font-size: 1.2rem;
                         }
@@ -71,8 +74,40 @@
     }
 }
 
+@media(min-width: 500px){
+    .main-contacto{
+        padding: 7rem 5rem 5rem 5rem;
+        .contacto{
+            @include parrafo(1.7rem);
+            .contacto__texto{
+                align-items: flex-start;
+                width: 40rem;
+                h1{
+                    @include titulos(white, 4.2rem, 2rem);
+                }
+            }
+        }
+        .formulario{
+            form{
+                width: 40rem;
+                fieldset{
+                    textarea{
+                        width: 40rem;
+                    }
+                    .formulario__boton{
+                        width: 15rem;
+                    }
+                    .mb-3{
+                        width: 38.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(min-width: 768px){
-    .mainContacto{
+    .main-contacto{
         padding: 7rem 5rem 5rem 5rem;
         .contacto{
             .contacto__texto{
@@ -96,7 +131,7 @@
 } 
 
 @media(min-width: 1024px){
-    .mainContacto{
+    .main-contacto{
         .contacto{
             .contacto__texto{
                 width: 90rem;

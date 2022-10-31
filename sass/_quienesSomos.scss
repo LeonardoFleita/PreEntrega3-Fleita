@@ -1,4 +1,4 @@
-@media(min-width: 500px){
+@media(min-width: 300px){
     .grilla-quienesSomos{
         display: grid;
         grid-template-areas: 
@@ -10,8 +10,8 @@
             background-size: cover;
             background-position: top center;
             grid-area: mainQuienesSomos;
-            padding: 7rem 3rem 5rem 3rem;
-            .mainQuienesSomos__grilla{
+            padding: 7rem 1rem 5rem 1rem;
+            .main-quienesSomos__grilla{
                 display: grid;
                 grid-template-areas:
                 "quienesSomos"
@@ -22,16 +22,16 @@
                 .quienesSomos{
                     padding: 0rem 0rem 4rem 0rem;
                     grid-area: quienesSomos;
-                    width: 40rem;
+                    width: 22rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     h1{
-                        @include titulos(white, 4.2rem, 2rem);
+                        @include titulos(white, 3rem, 2rem);
                     }
                     p{
                         color: $pColor;
-                        @include parrafo(1.7rem);
+                        @include parrafo(1.4rem);
                         padding-top: 1rem;  
                     }
                 }
@@ -39,7 +39,7 @@
                     padding: 3rem 0rem 4rem 0rem;
                     grid-area: fotoCalavera;
                     img{
-                        height: 20rem;
+                        height: 14rem;
                     }
                 }
                 .integrantes{
@@ -50,7 +50,7 @@
                     justify-content: flex-start;
                     .integrantes-titulo{
                         img{
-                            height: 8rem;
+                            height: 6rem;
                         }
                     }
                     .integrantes-grilla{
@@ -67,13 +67,13 @@
                         padding-top: 5rem;
                         .fotoCara{
                             img{
-                                height: 13rem; 
+                                height: 11.5rem; 
                             }
                         }
                         .caraNati{
                             grid-area: caraNati;
                             img{
-                                height: 14rem;
+                                height: 12.5rem;
                             }
                         }
                         .caraFlute{
@@ -85,20 +85,20 @@
                         .caraDami{
                             grid-area: caraDami;
                             img{
-                                height: 13.5rem;
+                                height: 12rem;
                             }
                         }
                         .datos{
-                            width: 28rem;
+                            width: 22rem;
                             h2{
                                 font-family: 'Roboto', sans-serif;
                                 color: white;
-                                font-size: 2.2rem;
+                                font-size: 1.8rem;
                                 font-weight: 600;
                             }
                             a{
                                 img{
-                                    height: 5em;
+                                    height: 3.5rem;
                                     padding-bottom: 0.2rem;
                                     transition: all 0.3s;
                                     &:hover{
@@ -108,7 +108,8 @@
                             }
                             p{
                                 color: $pColor;
-                                @include parrafo(1.4rem);
+                                width: 14rem;
+                                @include parrafo(1.1rem);
                             }  
                         }
                         .datosNati{
@@ -130,11 +131,76 @@
     }
 }
 
+@media(min-width: 500px){
+    .grilla-quienesSomos{
+        main{
+            padding: 7rem 3rem 5rem 3rem;
+            .main-quienesSomos__grilla{
+                .quienesSomos{
+                    width: 40rem;
+                    h1{
+                        @include titulos(white, 4.2rem, 2rem);
+                    }
+                    p{
+                        @include parrafo(1.7rem);
+                    }
+                }
+                .fotoCalavera{
+                    padding: 3rem 0rem 4rem 0rem;
+                    grid-area: fotoCalavera;
+                    img{
+                        height: 20rem;
+                    }
+                }
+                .integrantes{
+                    .integrantes-titulo{
+                        img{
+                            height: 8rem;
+                        }
+                    }
+                    .integrantes-grilla{
+                        .fotoCara{
+                            img{
+                                height: 13rem; 
+                            }
+                        }
+                        .caraNati{
+                            img{
+                                height: 14rem;
+                            }
+                        }
+                        .caraDami{
+                            img{
+                                height: 13.5rem;
+                            }
+                        }
+                        .datos{
+                            width: 28rem;
+                            h2{
+                                font-size: 2.2rem;
+                            }
+                            a{
+                                img{
+                                    height: 5rem;
+                                }
+                            }
+                            p{
+                                width: 20rem;
+                                @include parrafo(1.4rem);
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(min-width: 768px){
     .grilla-quienesSomos{
         main{
             padding: 7rem 5rem 5rem 5rem;
-            .mainQuienesSomos__grilla{
+            .main-quienesSomos__grilla{
                 column-gap: 2em;
                 grid-template-areas:
                 "quienesSomos fotoCalavera"
@@ -164,7 +230,7 @@
 @media(min-width: 1024px){
     .grilla-quienesSomos{
         main{
-            .mainQuienesSomos__grilla{
+            .main-quienesSomos__grilla{
                 column-gap: 1rem;
                 .quienesSomos{
                     width: 55rem;
@@ -196,7 +262,7 @@
 @media(min-width: 1300px){
     .grilla-quienesSomos{
         main{
-            .mainQuienesSomos__grilla{
+            .main-quienesSomos__grilla{
                 .quienesSomos{
                     width: 65rem;
                 }
